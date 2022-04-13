@@ -1,6 +1,6 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-$this->load->view('dist/_partials/header');
+
+echo view('dist/_partials/header');
 ?>
       <!-- Main Content -->
       <div class="main-content">
@@ -45,7 +45,7 @@ $this->load->view('dist/_partials/header');
                         <ul class="list-unstyled list-unstyled-border">
                           <li class="media">
                             <a href="#">
-                              <img alt="image" class="mr-3 rounded" width="50" src="<?php echo base_url(); ?>assets/img/products/product-4-50.png">
+                              <img alt="image" class="mr-3 rounded" width="50" src="<?php echo base_url('assets/img/products/product-4-50.png'); ?>">
                             </a>
                             <div class="media-body">
                               <div class="media-right">$805</div>
@@ -55,7 +55,7 @@ $this->load->view('dist/_partials/header');
                           </li>
                           <li class="media">
                             <a href="#">
-                              <img alt="image" class="mr-3 rounded" width="50" src="<?php echo base_url(); ?>assets/img/products/product-1-50.png">
+                              <img alt="image" class="mr-3 rounded" width="50" src="<?php echo base_url('assets/img/products/product-1-50.png'); ?>">
                             </a>
                             <div class="media-body">
                               <div class="media-right">$405</div>
@@ -65,7 +65,7 @@ $this->load->view('dist/_partials/header');
                           </li>
                           <li class="media">
                             <a href="#">
-                              <img alt="image" class="mr-3 rounded" width="50" src="<?php echo base_url(); ?>assets/img/products/product-2-50.png">
+                              <img alt="image" class="mr-3 rounded" width="50" src="<?php echo base_url('assets/img/products/product-2-50.png'); ?>">
                             </a>
                             <div class="media-body">
                               <div class="media-right">$499</div>
@@ -76,7 +76,7 @@ $this->load->view('dist/_partials/header');
                           </li>
                           <li class="media">
                             <a href="#">
-                              <img alt="image" class="mr-3 rounded" width="50" src="<?php echo base_url(); ?>assets/img/products/product-3-50.png">
+                              <img alt="image" class="mr-3 rounded" width="50" src="<?php echo base_url('assets/img/products/product-3-50.png'); ?>">
                             </a>
                             <div class="media-body">
                               <div class="media-right">$149</div>
@@ -272,4 +272,4 @@ $this->load->view('dist/_partials/header');
           </div>
         </section>
       </div>
-<?php $this->load->view('dist/_partials/footer'); ?>
+<?php echo view('dist/_partials/footer'); ?>

@@ -1,6 +1,6 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-$this->load->view('dist/_partials/header');
+
+echo view('dist/_partials/header');
 ?>
 <body>
   <div id="app">
@@ -69,4 +69,4 @@ $this->load->view('dist/_partials/header');
     </section>
   </div>
 
-<?php $this->load->view('dist/_partials/js'); ?>
+<?php echo view('dist/_partials/js'); ?>

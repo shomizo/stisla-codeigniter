@@ -1,6 +1,6 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-$this->load->view('dist/_partials/header');
+
+echo view('dist/_partials/header');
 ?>
       <!-- Main Content -->
       <div class="main-content">
@@ -50,7 +50,7 @@ $this->load->view('dist/_partials/header');
                 </div>
               </div>
               <div class="col-12 mb-4">
-                <div class="hero text-white hero-bg-image hero-bg-parallax" style="background-image: url('<?php echo base_url(); ?>assets/img/unsplash/andre-benz-1214056-unsplash.jpg');">
+                <div class="hero text-white hero-bg-image hero-bg-parallax" style="background-image: url('<?php echo base_url('assets/img/unsplash/andre-benz-1214056-unsplash.jpg');'); ?>">
                   <div class="hero-inner">
                     <h2>Welcome, Ujang!</h2>
                     <p class="lead">You almost arrived, complete the information about your account to complete registration.</p>
@@ -61,7 +61,7 @@ $this->load->view('dist/_partials/header');
                 </div>
               </div>
               <div class="col-12 mb-4">
-                <div class="hero text-white hero-bg-image" style="background-image: url('<?php echo base_url(); ?>assets/img/unsplash/eberhard-grossgasteiger-1207565-unsplash.jpg');">
+                <div class="hero text-white hero-bg-image" style="background-image: url('<?php echo base_url('assets/img/unsplash/eberhard-grossgasteiger-1207565-unsplash.jpg');'); ?>">
                   <div class="hero-inner">
                     <h2>Welcome, Ujang!</h2>
                     <p class="lead">You almost arrived, complete the information about your account to complete registration.</p>
@@ -75,4 +75,4 @@ $this->load->view('dist/_partials/header');
           </div>
         </section>
       </div>
-<?php $this->load->view('dist/_partials/footer'); ?>
+<?php echo view('dist/_partials/footer'); ?>

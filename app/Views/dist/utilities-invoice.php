@@ -1,6 +1,6 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-$this->load->view('dist/_partials/header');
+
+echo view('dist/_partials/header');
 ?>
       <!-- Main Content -->
       <div class="main-content">
@@ -102,10 +102,10 @@ $this->load->view('dist/_partials/header');
                         <div class="section-title">Payment Method</div>
                         <p class="section-lead">The payment method that we provide is to make it easier for you to pay invoices.</p>
                         <div class="images">
-                          <img src="<?php echo base_url(); ?>assets/img/visa.png" alt="visa">
-                          <img src="<?php echo base_url(); ?>assets/img/jcb.png" alt="jcb">
-                          <img src="<?php echo base_url(); ?>assets/img/mastercard.png" alt="mastercard">
-                          <img src="<?php echo base_url(); ?>assets/img/paypal.png" alt="paypal">
+                          <img src="<?php echo base_url('assets/img/visa.png'); ?>" alt="visa">
+                          <img src="<?php echo base_url('assets/img/jcb.png'); ?>" alt="jcb">
+                          <img src="<?php echo base_url('assets/img/mastercard.png'); ?>" alt="mastercard">
+                          <img src="<?php echo base_url('assets/img/paypal.png'); ?>" alt="paypal">
                         </div>
                       </div>
                       <div class="col-lg-4 text-right">
@@ -139,4 +139,4 @@ $this->load->view('dist/_partials/header');
           </div>
         </section>
       </div>
-<?php $this->load->view('dist/_partials/footer'); ?>
+<?php echo view('dist/_partials/footer'); ?>

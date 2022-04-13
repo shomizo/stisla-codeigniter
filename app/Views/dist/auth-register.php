@@ -1,6 +1,6 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-$this->load->view('dist/_partials/header');
+
+echo view('dist/_partials/header');
 ?>
 <body>
   <div id="app">
@@ -9,7 +9,7 @@ $this->load->view('dist/_partials/header');
         <div class="row">
           <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
             <div class="login-brand">
-              <img src="<?php echo base_url(); ?>assets/img/stisla-fill.svg" alt="logo" width="100" class="shadow-light rounded-circle">
+              <img src="<?php echo base_url('assets/img/stisla-fill.svg'); ?>" alt="logo" width="100" class="shadow-light rounded-circle">
             </div>
 
             <div class="card card-primary">
@@ -107,4 +107,4 @@ $this->load->view('dist/_partials/header');
     </section>
   </div>
 
-<?php $this->load->view('dist/_partials/js'); ?>
+<?php echo view('dist/_partials/js'); ?>

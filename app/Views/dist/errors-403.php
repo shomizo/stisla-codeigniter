@@ -1,6 +1,6 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-$this->load->view('dist/_partials/header');
+
+echo view('dist/_partials/header');
 ?>
 <body>
   <div id="app">
@@ -31,7 +31,7 @@ $this->load->view('dist/_partials/header');
                 </div>
               </form>
               <div class="mt-3">
-                <a href="<?php echo base_url(); ?>dist/index">Back to Home</a>
+                <a href="<?php echo base_url('dist/index'); ?>">Back to Home</a>
               </div>
             </div>
           </div>
@@ -43,4 +43,4 @@ $this->load->view('dist/_partials/header');
     </section>
   </div>
 
-<?php $this->load->view('dist/_partials/js'); ?>
+<?php echo view('dist/_partials/js'); ?>

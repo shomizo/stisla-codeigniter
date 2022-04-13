@@ -1,6 +1,6 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-$this->load->view('dist/_partials/header');
+
+echo view('dist/_partials/header');
 ?>
       <!-- Main Content -->
       <div class="main-content">
@@ -8,7 +8,7 @@ $this->load->view('dist/_partials/header');
           <div class="section-header">
             <h1>Posts</h1>
             <div class="section-header-button">
-              <a href="<?php echo base_url(); ?>dist/features_post_create" class="btn btn-primary">Add New</a>
+              <a href="<?php echo base_url('dist/features_post_create'); ?>" class="btn btn-primary">Add New</a>
             </div>
             <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
@@ -109,7 +109,7 @@ $this->load->view('dist/_partials/header');
                           </td>
                           <td>
                             <a href="#">
-                              <img alt="image" src="<?php echo base_url(); ?>assets/img/avatar/avatar-5.png" class="rounded-circle" width="35" data-toggle="title" title=""> <div class="d-inline-block ml-1">Rizal Fakhri</div>
+                              <img alt="image" src="<?php echo base_url('assets/img/avatar/avatar-5.png'); ?>" class="rounded-circle" width="35" data-toggle="title" title=""> <div class="d-inline-block ml-1">Rizal Fakhri</div>
                             </a>
                           </td>
                           <td>2018-01-20</td>
@@ -137,7 +137,7 @@ $this->load->view('dist/_partials/header');
                           </td>
                           <td>
                             <a href="#">
-                              <img alt="image" src="<?php echo base_url(); ?>assets/img/avatar/avatar-5.png" class="rounded-circle" width="35" data-toggle="title" title=""> <div class="d-inline-block ml-1">Rizal Fakhri</div>
+                              <img alt="image" src="<?php echo base_url('assets/img/avatar/avatar-5.png'); ?>" class="rounded-circle" width="35" data-toggle="title" title=""> <div class="d-inline-block ml-1">Rizal Fakhri</div>
                             </a>
                           </td>
                           <td>2018-01-20</td>
@@ -165,7 +165,7 @@ $this->load->view('dist/_partials/header');
                           </td>
                           <td>
                             <a href="#">
-                              <img alt="image" src="<?php echo base_url(); ?>assets/img/avatar/avatar-5.png" class="rounded-circle" width="35" data-toggle="title" title=""> <div class="d-inline-block ml-1">Rizal Fakhri</div>
+                              <img alt="image" src="<?php echo base_url('assets/img/avatar/avatar-5.png'); ?>" class="rounded-circle" width="35" data-toggle="title" title=""> <div class="d-inline-block ml-1">Rizal Fakhri</div>
                             </a>
                           </td>
                           <td>2018-01-20</td>
@@ -193,7 +193,7 @@ $this->load->view('dist/_partials/header');
                           </td>
                           <td>
                             <a href="#">
-                              <img alt="image" src="<?php echo base_url(); ?>assets/img/avatar/avatar-5.png" class="rounded-circle" width="35" data-toggle="title" title=""> <div class="d-inline-block ml-1">Rizal Fakhri</div>
+                              <img alt="image" src="<?php echo base_url('assets/img/avatar/avatar-5.png'); ?>" class="rounded-circle" width="35" data-toggle="title" title=""> <div class="d-inline-block ml-1">Rizal Fakhri</div>
                             </a>
                           </td>
                           <td>2018-01-20</td>
@@ -221,7 +221,7 @@ $this->load->view('dist/_partials/header');
                           </td>
                           <td>
                             <a href="#">
-                              <img alt="image" src="<?php echo base_url(); ?>assets/img/avatar/avatar-5.png" class="rounded-circle" width="35" data-toggle="title" title=""> <div class="d-inline-block ml-1">Rizal Fakhri</div>
+                              <img alt="image" src="<?php echo base_url('assets/img/avatar/avatar-5.png'); ?>" class="rounded-circle" width="35" data-toggle="title" title=""> <div class="d-inline-block ml-1">Rizal Fakhri</div>
                             </a>
                           </td>
                           <td>2018-01-20</td>
@@ -263,4 +263,4 @@ $this->load->view('dist/_partials/header');
           </div>
         </section>
       </div>
-<?php $this->load->view('dist/_partials/footer'); ?>
+<?php echo view('dist/_partials/footer'); ?>

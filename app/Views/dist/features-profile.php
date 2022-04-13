@@ -1,6 +1,6 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-$this->load->view('dist/_partials/header');
+
+echo view('dist/_partials/header');
 ?>
       <!-- Main Content -->
       <div class="main-content">
@@ -22,7 +22,7 @@ $this->load->view('dist/_partials/header');
               <div class="col-12 col-md-12 col-lg-5">
                 <div class="card profile-widget">
                   <div class="profile-widget-header">                     
-                    <img alt="image" src="<?php echo base_url(); ?>assets/img/avatar/avatar-1.png" class="rounded-circle profile-widget-picture">
+                    <img alt="image" src="<?php echo base_url('assets/img/avatar/avatar-1.png'); ?>" class="rounded-circle profile-widget-picture">
                     <div class="profile-widget-items">
                       <div class="profile-widget-item">
                         <div class="profile-widget-item-label">Posts</div>
@@ -123,4 +123,4 @@ $this->load->view('dist/_partials/header');
           </div>
         </section>
       </div>
-<?php $this->load->view('dist/_partials/footer'); ?>
+<?php echo view('dist/_partials/footer'); ?>
