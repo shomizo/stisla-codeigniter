@@ -23,7 +23,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://localhost/airticket/';
+    public $baseURL = 'http://localhost/stisla-codeigniter/';
 
     /**
      * --------------------------------------------------------------------------

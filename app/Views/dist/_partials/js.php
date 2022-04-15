@@ -10,11 +10,12 @@
   <!-- JS Libraies -->
 <?php
 $uri = current_url(true);
-if ($uri->getTotalSegments() == 5) {
+if ($uri->getTotalSegments() > 3) {
 	$segment = $uri->getSegment(4);
 } else {
 	$segment = '';
 }
+echo '$segment->'. $segment;
 if ($segment == "" ) { ?>
   <script src="<?php echo base_url('assets/modules/jquery.sparkline.min.js'); ?>"></script>
   <script src="<?php echo base_url('assets/modules/chart.min.js'); ?>"></script>
